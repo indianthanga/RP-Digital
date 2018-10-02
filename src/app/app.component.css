@@ -1,191 +1,566 @@
-.full-screen {
-  width: 100%;
-  height: 100%;
-}
-.home {
-  position: relative;
-}
-.home-loader {
-  position:absolute;
-  background-image: url("/src/assets/images/background/background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-x: hidden;
-}
-.home-loader .box .box1 {
-  position: absolute;
-  width: 70%;
-  height: 100%;
-  float: left;
-  background-color:rgb(255,255,255,0.7);
-  left: 0%;
-  top: 0;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
-  animation-name: left-div-move;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
-  font-family: Anagram;
-}
-.home-loader .box .box1 .company-name {
-  position: absolute;
+/*
+Desktops - 1281px to higher resolution
+*/
+@media (min-width : 1281px) {
+  .full-screen {
+    width: 100%;
+    height: 100%;
+  }
+  .home {
+    position: relative;
+  }
+  .home-loader {
+    position:absolute;
+    background-image: url("/assets/images/background/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  .home-loader .box .box1 {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    float: left;
+    background-color:rgb(255,255,255,0.7);
+    left: 0%;
+    top: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+    animation-name: left-div-move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    font-family: Anagram;
+  }
+  .home-loader .box .box1 .company-name {
+    position: absolute;
+      margin: 0px auto;
+      width: 100%;
+      height: 50%;
+  }
+  .home-loader .box .box1 .company-name1 {
+    position: absolute;
+      margin: 0px auto;
+      width: 45%;
+      height: 100%;
+      display: table;
+  }
+  .home-loader .box .box1 .company-name1 h1 {
+    text-align: center;
+    font-size: 8em;
+    display: table-cell;
+    vertical-align: bottom;
+    -webkit-text-stroke: 3px #1b9bff;
+    text-stroke: 3px #1b9bff;
+    color: rgb(255,255,255,1);
+    text-align: right;
+    letter-spacing: 9px;
+  }
+  .home-loader .box .box1 .company-name2 {
+      position: absolute;
+      margin: 0px auto;
+      width: 55%;
+      height: 100%;
+      right: 0;
+      display: table;
+  }
+  .home-loader .box .box1 .company-name2 h3 {
+    text-align: center;
+    font-size: 4em;
+    display: table-cell;
+    vertical-align: bottom;
+    color: rgb(27,155,255,1);
+    text-align: left;
+    letter-spacing: 9px;
+    text-transform: capitalize;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  }
+  .home-loader .box .box1 .company-text {
+    position: absolute;
     margin: 0px auto;
     width: 100%;
     height: 50%;
-}
-.home-loader .box .box1 .company-name1 {
-  position: absolute;
-    margin: 0px auto;
-    width: 45%;
-    height: 100%;
+    bottom: 0;
     display: table;
+  }
+  .home-loader .box .box1 .company-text h4 {
+    text-align: center;
+    font-size: 1.5em;
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 1%;
+    color: rgb(0,0,0,1);
+    text-align: center;
+    letter-spacing: 9px;
+    text-transform: capitalize;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  }
+  .home-loader .box .box2 {
+    position: absolute;
+    width: 54%;
+    height: 100%;
+    float: left;
+    background-color:rgb(27,155,255,0.3);
+    right: 0;
+    top: 0;
+    left: 46%;
+    -webkit-clip-path: polygon(45% 0, 100% 0, 100% 100%, 19% 99%);
+    clip-path: polygon(45% 0, 100% 0, 100% 100%, 19% 100%);
+    animation-name: right-div-move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+  }
+  .home-loader .box img {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    animation-name: click-here;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+  }
+  
+  .items-list {
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 45%;
+    height: 50%;
+    top: 25%;
+    left: 45%;
+    list-style: none;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  }
+  .items-list li {
+    padding: 4%;
+    color: rgb(0, 0,0);
+    background-color:rgb(255,255,255);
+    border-radius: 5px;
+    margin: 4px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  li {
+    opacity: 0;
+    -webkit-animation: fadeIn 2s 1;
+    animation: fadeIn 2s 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  li:nth-child(5n+1) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+  
+  li:nth-child(5n+2) {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+  
+  li:nth-child(5n+3) {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+  }
+  
+  li:nth-child(5n+4) {
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+  }
+  
+  li:nth-child(5n+5) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+  }
+  li:nth-child(5n+6) {
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s;
+  }
 }
-.home-loader .box .box1 .company-name1 h1 {
-  text-align: center;
-  font-size: 8em;
-  display: table-cell;
-  vertical-align: bottom;
-  -webkit-text-stroke: 3px #1b9bff;
-  text-stroke: 3px #1b9bff;
-  color: rgb(255,255,255,1);
-  text-align: right;
-  letter-spacing: 9px;
-}
-.home-loader .box .box1 .company-name2 {
+/*
+Laptops, Desktops - 1025px to 1280px resolution
+*/
+@media (min-width : 1025px) and (max-width : 1280px) {
+  .full-screen {
+    width: 100%;
+    height: 100%;
+  }
+  .home {
+    position: relative;
+  }
+  .home-loader {
+    position:absolute;
+    background-image: url("/assets/images/background/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  .home-loader .box .box1 {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    float: left;
+    background-color:rgb(255,255,255,0.7);
+    left: 0%;
+    top: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+    animation-name: left-div-move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    font-family: Anagram;
+  }
+  .home-loader .box .box1 .company-name {
+    position: absolute;
+      margin: 0px auto;
+      width: 100%;
+      height: 50%;
+  }
+  .home-loader .box .box1 .company-name1 {
+    position: absolute;
+      margin: 0px auto;
+      width: 45%;
+      height: 100%;
+      display: table;
+  }
+  .home-loader .box .box1 .company-name1 h1 {
+    text-align: center;
+    font-size: 8em;
+    display: table-cell;
+    vertical-align: bottom;
+    -webkit-text-stroke: 3px #1b9bff;
+    text-stroke: 3px #1b9bff;
+    color: rgb(255,255,255,1);
+    text-align: right;
+    letter-spacing: 9px;
+  }
+  .home-loader .box .box1 .company-name2 {
+      position: absolute;
+      margin: 0px auto;
+      width: 55%;
+      height: 100%;
+      right: 0;
+      display: table;
+  }
+  .home-loader .box .box1 .company-name2 h3 {
+    text-align: center;
+    font-size: 4em;
+    display: table-cell;
+    vertical-align: bottom;
+    color: rgb(27,155,255,1);
+    text-align: left;
+    letter-spacing: 9px;
+    text-transform: capitalize;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  }
+  .home-loader .box .box1 .company-text {
     position: absolute;
     margin: 0px auto;
-    width: 55%;
-    height: 100%;
-    right: 0;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
     display: table;
+  }
+  .home-loader .box .box1 .company-text h4 {
+    text-align: center;
+    font-size: 1.5em;
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 1%;
+    color: rgb(0,0,0,1);
+    text-align: center;
+    letter-spacing: 9px;
+    text-transform: capitalize;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  }
+  .home-loader .box .box2 {
+    position: absolute;
+    width: 54%;
+    height: 100%;
+    float: left;
+    background-color:rgb(27,155,255,0.3);
+    right: 0;
+    top: 0;
+    left: 46%;
+    -webkit-clip-path: polygon(45% 0, 100% 0, 100% 100%, 19% 99%);
+    clip-path: polygon(45% 0, 100% 0, 100% 100%, 19% 100%);
+    animation-name: right-div-move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+  }
+  .home-loader .box img {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    animation-name: click-here;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+  }
+  
+  .items-list {
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 45%;
+    height: 50%;
+    top: 25%;
+    left: 45%;
+    list-style: none;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  }
+  .items-list li {
+    padding: 4%;
+    color: rgb(0, 0,0);
+    background-color:rgb(255,255,255);
+    border-radius: 5px;
+    margin: 4px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  li {
+    opacity: 0;
+    -webkit-animation: fadeIn 2s 1;
+    animation: fadeIn 2s 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  li:nth-child(5n+1) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+  
+  li:nth-child(5n+2) {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+  
+  li:nth-child(5n+3) {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+  }
+  
+  li:nth-child(5n+4) {
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+  }
+  
+  li:nth-child(5n+5) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+  }
+  li:nth-child(5n+6) {
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s;
+  }
 }
-.home-loader .box .box1 .company-name2 h3 {
-  text-align: center;
-  font-size: 4em;
-  display: table-cell;
-  vertical-align: bottom;
-  color: rgb(27,155,255,1);
-  text-align: left;
-  letter-spacing: 9px;
-  text-transform: capitalize;
-  font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+/*
+Tablets, IPads(portrait) - 768px to 1024px resolution
+*/
+@media (min-width : 768px) and (max-width : 1024px) {
+  .full-screen {
+    width: 100%;
+    height: 100%;
+  }
+  .home {
+    position: relative;
+  }
+  .home-loader {
+    position:absolute;
+    background-image: url("/assets/images/background/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  .home-loader .box .box1 {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    float: left;
+    background-color:rgb(255,255,255,0.7);
+    left: 0%;
+    top: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+    animation-name: left-div-move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    font-family: Anagram;
+  }
+  .home-loader .box .box1 .company-name {
+    position: absolute;
+      margin: 0px auto;
+      width: 100%;
+      height: 50%;
+  }
+  .home-loader .box .box1 .company-name1 {
+    position: absolute;
+      margin: 0px auto;
+      width: 35%;
+      height: 100%;
+      display: table;
+  }
+  .home-loader .box .box1 .company-name1 h1 {
+    text-align: center;
+    font-size: 6em;
+    display: table-cell;
+    vertical-align: bottom;
+    -webkit-text-stroke: 3px #1b9bff;
+    text-stroke: 3px #1b9bff;
+    color: rgb(255,255,255,1);
+    text-align: right;
+    letter-spacing: 9px;
+  }
+  .home-loader .box .box1 .company-name2 {
+      position: absolute;
+      margin: 0px auto;
+      width: 65%;
+      height: 100%;
+      right: 0;
+      display: table;
+  }
+  .home-loader .box .box1 .company-name2 h3 {
+    text-align: center;
+    font-size: 4em;
+    display: table-cell;
+    vertical-align: bottom;
+    color: rgb(27,155,255,1);
+    text-align: left;
+    letter-spacing: 9px;
+    text-transform: capitalize;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  }
+  .home-loader .box .box1 .company-text {
+    position: absolute;
+    margin: 0px auto;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    display: table;
+  }
+  .home-loader .box .box1 .company-text h4 {
+    text-align: center;
+    font-size: 1em;
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 1%;
+    color: rgb(0,0,0,1);
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  }
+  .home-loader .box .box2 {
+    position: absolute;
+    width: 54%;
+    height: 100%;
+    float: left;
+    background-color:rgb(27,155,255,0.3);
+    right: 0;
+    top: 0;
+    left: 46%;
+    -webkit-clip-path: polygon(45% 0, 100% 0, 100% 100%, 19% 99%);
+    clip-path: polygon(45% 0, 100% 0, 100% 100%, 19% 100%);
+    animation-name: right-div-move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+  }
+  .home-loader .box img {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    animation-name: click-here;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+  }
+  
+  .items-list {
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 45%;
+    height: 50%;
+    top: 25%;
+    left: 45%;
+    list-style: none;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  }
+  .items-list li {
+    padding: 4%;
+    color: rgb(0, 0,0);
+    background-color:rgb(255,255,255);
+    border-radius: 5px;
+    margin: 4px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  li {
+    opacity: 0;
+    -webkit-animation: fadeIn 2s 1;
+    animation: fadeIn 2s 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  li:nth-child(5n+1) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+  
+  li:nth-child(5n+2) {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+  
+  li:nth-child(5n+3) {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+  }
+  
+  li:nth-child(5n+4) {
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+  }
+  
+  li:nth-child(5n+5) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+  }
+  li:nth-child(5n+6) {
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s;
+  } 
 }
-.home-loader .box .box1 .company-text {
-  position: absolute;
-  margin: 0px auto;
-  width: 100%;
-  height: 50%;
-  bottom: 0;
-  display: table;
+/*
+Tablets, IPads(landscape) - 768px to 1024px resolution
+*/
+@media (min-width : 768px) and (max-width : 1024px) and (orientation:landscape) {
+  
 }
-.home-loader .box .box1 .company-text h4 {
-  text-align: center;
-  font-size: 1.5em;
-  display: table-cell;
-  vertical-align: top;
-  padding-top: 1%;
-  color: rgb(0,0,0,1);
-  text-align: center;
-  letter-spacing: 9px;
-  text-transform: capitalize;
-  font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+/*
+Low Resolution Tablets, Mobiles(landscape) - 481px to 767px resolution
+*/
+@media (min-width : 481px) and (max-width : 767px) {
+  
 }
-.home-loader .box .box2 {
-  position: absolute;
-  width: 54%;
-  height: 100%;
-  float: left;
-  background-color:rgb(27,155,255,0.3);
-  right: 0;
-  top: 0;
-  left: 46%;
-  -webkit-clip-path: polygon(45% 0, 100% 0, 100% 100%, 19% 99%);
-  clip-path: polygon(45% 0, 100% 0, 100% 100%, 19% 100%);
-  animation-name: right-div-move;
-  animation-duration: 2s;
-  animation-timing-function: ease-in;
-}
-.home-loader .box img {
-  position: absolute;
-  margin: 0 auto;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  animation-name: click-here;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-}
-@keyframes left-div-move {
-  from {left:-70%;}
-  to {left:0%}
-}
-@keyframes right-div-move {
-  from {left:90%;}
-  to {left:46%}
-}
-@keyframes click-here {
-  0% {bottom:10px;}
-  50% {bottom: 0;}
-  100% {bottom: 10px;}
-}
-.items-list {
-  padding: 0;
-  position: relative;
-  text-align: left;
-  width: 45%;
-  height: 50%;
-  top: 25%;
-  left: 45%;
-  list-style: none;
-  font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
-}
-.items-list li {
-  padding: 4%;
-  color: rgb(0, 0,0);
-  background-color:rgb(255,255,255);
-  border-radius: 5px;
-  margin: 4px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-}
-li {
-  opacity: 0;
-  -webkit-animation: fadeIn 2s 1;
-  animation: fadeIn 2s 1;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-li:nth-child(5n+1) {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-}
-
-li:nth-child(5n+2) {
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
-}
-
-li:nth-child(5n+3) {
-  -webkit-animation-delay: 6s;
-  animation-delay: 6s;
-}
-
-li:nth-child(5n+4) {
-  -webkit-animation-delay: 8s;
-  animation-delay: 8s;
-}
-
-li:nth-child(5n+5) {
-  -webkit-animation-delay: 10s;
-  animation-delay: 10s;
-}
-li:nth-child(5n+6) {
-  -webkit-animation-delay: 12s;
-  animation-delay: 12s;
+/*
+Most of the Smartphone Mobiles(portrait) - 320px to 480px resolution
+*/
+@media (min-width : 320px) and (max-width : 480px) {
+  
 }
 @-webkit-keyframes fadeIn {
   0% {
@@ -203,4 +578,17 @@ li:nth-child(5n+6) {
   100% {
     opacity: 1.0;
   }
+}
+@keyframes left-div-move {
+  from {left:-70%;}
+  to {left:0%}
+}
+@keyframes right-div-move {
+  from {left:90%;}
+  to {left:46%}
+}
+@keyframes click-here {
+  0% {bottom:10px;}
+  50% {bottom: 0;}
+  100% {bottom: 10px;}
 }
