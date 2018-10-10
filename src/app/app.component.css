@@ -736,7 +736,183 @@ Low Resolution Tablets, Mobiles(landscape) - 481px to 767px resolution
 Most of the Smartphone Mobiles(portrait) - 320px to 480px resolution
 */
 @media (min-width : 320px) and (max-width : 480px) {
+  .full-screen {
+    width: 100%;
+    height: 100%;
+  }
+  .home {
+    position: relative;
+  }
+  .home-loader {
+    position:absolute;
+    background-image: url("/assets/images/background/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  .home-loader .box .box1 {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    float: left;
+    background-color:rgb(255,255,255,0.7);
+    left: 0%;
+    top: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 67%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 67%, 0% 100%);
+    animation-name: top-div-move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    font-family: Anagram;
+  }
+  .home-loader .box .box1 .company-name {
+    position: absolute;
+      margin: 0px auto;
+      width: 100%;
+      height: 50%;
+  }
+  .home-loader .box .box1 .company-name1 {
+    position: absolute;
+      margin: 0px auto;
+      width: 40%;
+      height: 100%;
+      display: table;
+  }
+  .home-loader .box .box1 .company-name1 h1 {
+    text-align: center;
+    font-size: 5em;
+    display: table-cell;
+    vertical-align: bottom;
+    -webkit-text-stroke: 3px #1b9bff;
+    text-stroke: 3px #1b9bff;
+    color: rgb(255,255,255,1);
+    text-align: right;
+    letter-spacing: 9px;
+  }
+  .home-loader .box .box1 .company-name2 {
+      position: absolute;
+      margin: 0px auto;
+      width: 60%;
+      height: 100%;
+      right: 0;
+      display: table;
+  }
+  .home-loader .box .box1 .company-name2 h3 {
+    text-align: center;
+    font-size: 2.5em;
+    display: table-cell;
+    vertical-align: bottom;
+    color: rgb(27,155,255,1);
+    text-align: left;
+    letter-spacing: 9px;
+    text-transform: capitalize;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  }
+  .home-loader .box .box1 .company-text {
+    position: absolute;
+    margin: 0px auto;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    display: table;
+  }
+  .home-loader .box .box1 .company-text h4 {
+    text-align: center;
+    font-size: 1em;
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 1%;
+    color: rgb(0,0,0,1);
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  }
+  .home-loader .box .box2 {
+    position: absolute;
+    width: 100%;
+    height: 68%;
+    float: left;
+    background-color:rgb(27,155,255,0.3);
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-clip-path: polygon(0% 26%, 100% 2%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 26%, 100% 2%, 100% 100%, 0% 100%);
+    animation-name: bottom-div-move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+  }
+  .home-loader .box img {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    animation-name: click-here;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+  }
   
+  .items-list {
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: 90%;
+    height: 50%;
+    top: 25%;
+    left: 5%;
+    list-style: none;
+    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  }
+  .items-list li {
+    padding: 2%;
+    color: rgb(0, 0,0);
+    background-color:rgb(255,255,255);
+    border-radius: 5px;
+    margin: 4px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  li {
+    opacity: 0;
+    -webkit-animation: fadeIn 2s 1;
+    animation: fadeIn 2s 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  li:nth-child(5n+1) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+  }
+  
+  li:nth-child(5n+2) {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+  }
+  
+  li:nth-child(5n+3) {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+  }
+  
+  li:nth-child(5n+4) {
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+  }
+  
+  li:nth-child(5n+5) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+  }
+  li:nth-child(5n+6) {
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s;
+  }
 }
 @-webkit-keyframes fadeIn {
   0% {
