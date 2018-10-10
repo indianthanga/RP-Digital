@@ -807,7 +807,7 @@ Most of the Smartphone Mobiles(portrait) - 320px to 480px resolution
     text-align: left;
     letter-spacing: 9px;
     text-transform: capitalize;
-    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+    font-family: Open-Sans;
   }
   .home-loader .box .box1 .company-text {
     position: absolute;
@@ -827,7 +827,7 @@ Most of the Smartphone Mobiles(portrait) - 320px to 480px resolution
     text-align: center;
     letter-spacing: 1px;
     text-transform: capitalize;
-    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+    font-family: Open-Sans;
   }
   .home-loader .box .box2 {
     position: absolute;
@@ -865,7 +865,7 @@ Most of the Smartphone Mobiles(portrait) - 320px to 480px resolution
     top: 25%;
     left: 5%;
     list-style: none;
-    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+    font-family: Open-Sans;
   }
   .items-list li {
     padding: 2%;
